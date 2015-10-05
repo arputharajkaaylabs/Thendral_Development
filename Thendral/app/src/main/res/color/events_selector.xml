@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:color="@color/common_signin_btn_default_background">
+        <shape android:shape="rectangle" android:color="@color/common_signin_btn_default_background" >
+            <stroke android:width="1dip"  />
+        </shape>
+    </item>
+    <item android:state_focused="true" android:color="@color/common_signin_btn_default_background" />
+    <item android:state_pressed="true" android:color="@color/common_signin_btn_default_background" />
+    <item android:color="@color/sub_title_head_color" />
+</selector> 

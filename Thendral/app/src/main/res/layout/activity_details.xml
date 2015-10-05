@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.kaaylabs.thendral.activity.DetailsActivity">
+
+    <include android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/tool_bar_activity"></include>
+    <ScrollView  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/button_material_light"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_margin="10dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/sub_title_head_color"
+                    android:id="@+id/detailsIssueHeadTextView"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="previous"
+                    android:layout_margin="10dp"
+                    android:id="@+id/previousTextView"
+                    android:textColor="@color/view_color"
+                    android:layout_centerVertical="true"
+                    android:textSize="12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/titleTextView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/sub_title_head_color"
+                android:id="@+id/authorTextView" />
+            <!--  <bitmap
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:src="@drawable/nerkanal_1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="bottom|left" />-->
+            <com.kaaylabs.thendral.util.DynamicImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:scaleType="centerCrop"
+                android:src="@drawable/nerkanal_1"
+                android:visibility="gone"/>
+            <!--  <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"
+                  android:layout_margin="10dp"
+                  android:adjustViewBounds="true"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/nerkanal_1"
+                  android:id="@+id/bannerImageView" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:text=""
+                android:id="@+id/descriptionTextView" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

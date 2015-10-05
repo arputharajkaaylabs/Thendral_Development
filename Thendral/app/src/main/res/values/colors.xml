@@ -1,0 +1,40 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#28458e</color>
+    <color name="myPrimaryDarkColor">#28458e</color>
+    <color name="myAccentColor">#28458e</color>
+    <color name="myDrawerBackground">#ffffff</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="black">#000000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="tabsScrollColor">#28458e</color>
+    <!--selected tab color-->
+    <color name="selected_tab">#28458e</color>
+    <color name="forgot_password_tab">#ffffff</color>
+    <color name="unselected_tab_text_color">#29050b</color>
+    <!--product header color-->
+    <color name="product_header_color">#29050b</color>
+    <color name="white">#ffffff</color>
+    <color name="list_background_pressed">#b1122e</color>
+    <color name="list_background">#2d2f3e</color>
+    <!--current issue-->
+    <color name="sub_title_head_color">#28458e</color>
+
+    <color name="view_color">#9298a4</color>
+    <color name="login_button_color">#181818</color>
+    <color name="login_edit_text">#8e8e8e</color>
+    <color name="portal_tamil_color">#333333</color>
+    <color name="google_color">#eb3a3f</color>
+    <color name="fab_color">#3a5795</color>
+
+</resources>

@@ -1,0 +1,203 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    android:orientation="vertical"
+    tools:context="com.kaaylabs.thendral.activity.ThendralLoginActivity"
+    android:id="@+id/loginRootLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/loginlayout"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="0.93"
+        android:layout_above="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/scrollView"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Thendral Login"
+                    android:id="@+id/textView"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="5dp"
+                    android:textColor="@color/sub_title_head_color"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/login_description"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/textView2"
+                    android:textSize="12sp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/portal_tamil_color"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/emailIdEditText"
+                        android:hint="Email Address "
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:background="@drawable/login_edit_text_bg"
+                        android:textSize="16sp"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="3dp"
+                        android:textColorHint="@color/login_edit_text"
+                        android:textColor="@color/login_edit_text"
+                        android:drawableRight="@drawable/bg_facebook"
+                        android:layout_below="@+id/scrollView"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/passwordEditText"
+                        android:singleLine="true"
+                        android:padding="10dp"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:drawableRight="@drawable/bg_facebook"
+                        android:background="@drawable/login_edit_text_bg"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/login_edit_text"
+                        android:textColor="@color/login_edit_text"
+                        android:hint="Password "
+                        android:layout_below="@+id/scrollView"/>
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:id="@+id/loginButton"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/google_color"
+                    android:text="@string/login_login_button"
+                    android:layout_below="@+id/scrollView"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/portal_tamil_color"
+                    android:id="@+id/orTextView" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1.0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/loginFacebookButton"
+                        android:text="Login with Facebook "
+                        android:textColor="@color/portal_tamil_color"
+                        android:layout_weight="0.5"
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/bg_facebook"
+                        android:layout_below="@+id/scrollView"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/loginGoogleButton"
+                        android:textColor="@color/portal_tamil_color"
+                        android:textAllCaps="false"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_google"
+                        android:text="Login with Google+ "
+                        android:layout_below="@+id/scrollView"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/needAccountTextView"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/need_an_account"
+                        android:textColor="@color/portal_tamil_color"
+                        android:layout_below="@+id/scrollView"/>
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/signUpButton"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textAllCaps="false"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/login_button_default"
+                        android:text="@string/sign_up_now"
+                        android:layout_below="@+id/scrollView"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip login"
+        android:id="@+id/skipLoginTextView"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+
+
+
+</LinearLayout>
