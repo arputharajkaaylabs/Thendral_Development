@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="action_bar_height">64dp</dimen>
-    <dimen name="login_image_logo">100dp</dimen>
-    <dimen name="login_image_logo_top">70dp</dimen>
-    <dimen name="login_welcome_thendral_top">362dp</dimen>
-    <dimen name="login_description_top">26dp</dimen>
-    <dimen name="signup_face_book_text_height">40dp</dimen>
-</resources>
